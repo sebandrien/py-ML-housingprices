@@ -9,3 +9,10 @@ First, a correlation between median_housing_price and other variables is establi
 The variables are per block, so from this data, we can determine that on average, there are approximately 34 bedrooms in a house.
 
 ![JupyterLab](train_data_histogram.png)
+
+Since there are negative values present in the data, we perform data.dropna(inplace=True).
+
+Looking at a sns.heatmap, we can better visualize correaltions between variabls.
+
+
+![JupyterLab](train_data_heatmap.png)
