@@ -21,3 +21,4 @@ Looking at a sns.heatmap, we can better visualize correaltions between variabls.
 Aftering processing the data, we are able to visualize the ocean_promiximity to median_house_price. A slight positive correlation is seen to median_house_price if a house is closer to a ocean/bay.
 
 ![JupyterLab](train_data_ocean_histogram.png)
+![Alt Text](./images/3)
