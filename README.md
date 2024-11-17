@@ -1,4 +1,4 @@
-# machinelearning-housingprices-python
+# PY California Housing Prices Data Analysis
 
 Created in jupyterLab
 
