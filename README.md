@@ -25,4 +25,4 @@ Aftering processing the data, we are able to visualize the ocean_promiximity to 
 ![JupyterLab](train_data_ocean_histogram.png)
 
 Here is the above data dispalyed in a cluster map.
-![Alt Text](./images/train_data_clustermap.png)
+![JupyterLab](./images/train_data_clustermap.png)
