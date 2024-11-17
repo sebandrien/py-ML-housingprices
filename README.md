@@ -1,6 +1,7 @@
 # PY California Housing Prices Data Analysis
 
 Created in jupyterLab.
+
 Data Set: https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
 In this model, checkpoint "housing.ckpt" is evaluated and processed.
