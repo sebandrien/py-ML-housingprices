@@ -45,3 +45,7 @@ Aftering processing the data, we are able to visualize the ocean_promiximity to 
 
 Here is the above data dispalyed in a cluster map.
 ![JupyterLab](./images/train_data_clustermap.png)
+
+## Conclusion
+
+Through the anaylsis of correlation metrics multiple relationships can be drawn from this data. The closer a house is to an ocean, the house its house value and the median income of the area.
