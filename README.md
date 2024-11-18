@@ -29,7 +29,7 @@ This heatmap visualizes the correlation matrix for all the numerical features in
 ![JupyterLab](images/graph_6.png)
 
 This heatmap is similar to the previous one, but this time, it includes the ocean_proximity feature, which has been one-hot encoded (i.e., converted into binary variables for each category of proximity to the ocean). This encoding allows us to analyze the correlation of ocean proximity with other numerical features in the dataset.
-![JupyterLab](images/train_data_histogram.png)
+![JupyterLab](images/graph_7.png)
 
 The variables are per block, so from this data, we can determine that on average, there are approximately 34 bedrooms in a house.
 
