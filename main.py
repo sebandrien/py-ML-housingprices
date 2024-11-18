@@ -18,23 +18,8 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('housing.csv')
+data = pd.read_csv('d.csv')
 print(data.columns)
-
-plt.figure(figsize=(10, 6), dpi=150)
-sns.histplot(data['ocean_proximity'], bins=20, kde=True)
-plt.title("Ocean Proximity")
-plt.show()
-
-plt.figure(figsize=(10, 6), dpi=150)
-sns.histplot(data['median_house_value'], bins=20, kde=True)
-plt.title("Median House Value")
-plt.show()
-
-plt.figure(figsize=(10, 6), dpi=150)
-sns.histplot(data['median_house_value'], bins=20, kde=True)
-plt.title("Median House Value")
-plt.show()
 
 plt.figure(figsize=(10, 6), dpi=150)
 sns.histplot(data['median_house_value'], bins=20, kde=True)
@@ -43,7 +28,12 @@ plt.show()
 
 plt.figure(figsize=(10, 6), dpi=150)
 sns.histplot(data['median_income'], bins=20, kde=True)
-plt.title("Median House Value")
+plt.title("Median Income")
+plt.show()
+
+plt.figure(figsize=(10, 6), dpi=150)
+sns.histplot(data['ocean_proximity'], bins=20, kde=True)
+plt.title("Ocean Proximity")
 plt.show()
 
 plt.figure(figsize=(10, 6), dpi=150)
