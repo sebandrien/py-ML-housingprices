@@ -23,7 +23,7 @@ Aims to explore the relationship between median_income (on the x-axis) and media
 ![JupyterLab](images/graph_4.png)
 
 This scatter plot visualizes the relationship between population (on the x-axis) and median_house_value (on the y-axis), with each point again colored by ocean_proximity.
-![JupyterLab](images/graph_5png)
+![JupyterLab](images/graph_5.png)
 
 This heatmap visualizes the correlation matrix for all the numerical features in the dataset. The correlation matrix is computed to understand how each numerical variable (e.g., median_income, households, population) is correlated with others.
 ![JupyterLab](images/graph_6.png)
