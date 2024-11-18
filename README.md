@@ -32,7 +32,6 @@ This heatmap is similar to the previous one, but this time, it includes the ocea
 ![JupyterLab](images/graph_7.png)
 
 The variables are per block, so from this data, we can determine that on average, there are approximately 34 bedrooms in a house.
-
 ![JupyterLab](images/train_data_histogram.png)
 
 Since there are negative values present in the data, we perform data.dropna(inplace=True).
