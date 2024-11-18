@@ -1,10 +1,10 @@
 # PY California Housing Prices Data Analysis
 
-Created in jupyterLab.
+Created in Google Colab.
 
 Data Set: https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
-In this model, checkpoint "housing.ckpt" is evaluated and processed.
+In this model, checkpoint "housing.csv" is evaluated and processed.
 The housing data evaluated is taken from the 1990 California census.
 First, a correlation between median_housing_price and other variables is established, allowing us to determine which variable correlates most with median_housing_price.
 
