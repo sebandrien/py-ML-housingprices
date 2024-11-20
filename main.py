@@ -81,29 +81,3 @@ print(classification_report(y_test, y_pred))
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 print("\n")
-
-# Battery Drain Prediction (Linear Regression)
-X_battery = data[['App Usage Time (min/day)', 'Screen On Time (hours/day)', 'Data Usage (MB/day)']]
-y_battery = data['Battery Drain (mAh/day)']
-
-# Training linear regression model
-battery_model = LinearRegression()
-battery_model.fit(X_battery, y_battery)
-data['Battery Prediction'] = battery_model.predict(X_battery)
-
-mae = mean_absolute_error(data['Battery Drain (mAh/day)'], data['Battery Prediction'])
-mse = mean_squared_error(data['Battery Drain (mAh/day)'], data['Battery Prediction'])
-rmse = np.sqrt(mse)
-r2 = r2_score(data['Battery Drain (mAh/day)'], data['Battery Prediction'])
-
-print("Regression Evaluation Metrics:")
-print(f"Mean Absolute Error (MAE): {mae}")
-print(f"Mean Squared Error (MSE): {mse}")
-print(f"Root Mean Squared Error (RMSE): {rmse}")
-print(f"R-squared (R²): {r2}")
-
-# Plotting Actual vs Predicted Battery Drain
-plt.figure(figsize=(10,6), dpi=150)
-sns.scatterplot(x='Battery Drain (mAh/day)', y='Battery Prediction', data=data)
-plt.title("Actual vs Predicted Battery Drain")
-plt.show()
