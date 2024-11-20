@@ -59,3 +59,50 @@ plt.figure(figsize=(10, 6), dpi=150)
 sns.heatmap(corr_matrix, annot=True, cmap='YlGnBu', fmt='.2f', linewidths=0.5)
 plt.title("Correlation Heatmap (Including One-Hot Encoded Ocean Proximity)")
 plt.show()
+
+# Predicting User Behavior Class (Logistic Regression)
+X = data[['App Usage Time (min/day)', 'Battery Drain (mAh/day)', 'Screen On Time (hours/day)', 'Data Usage (MB/day)']]
+y = data['User Behavior Class']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+# Scaling the data
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Training logistic regression model
+model = LogisticRegression(max_iter=500)
+model.fit(X_train_scaled, y_train)
+y_pred = model.predict(X_test_scaled)
+
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))
+print("\nConfusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+print("\n")
+
+# Battery Drain Prediction (Linear Regression)
+X_battery = data[['App Usage Time (min/day)', 'Screen On Time (hours/day)', 'Data Usage (MB/day)']]
+y_battery = data['Battery Drain (mAh/day)']
+
+# Training linear regression model
+battery_model = LinearRegression()
+battery_model.fit(X_battery, y_battery)
+data['Battery Prediction'] = battery_model.predict(X_battery)
+
+mae = mean_absolute_error(data['Battery Drain (mAh/day)'], data['Battery Prediction'])
+mse = mean_squared_error(data['Battery Drain (mAh/day)'], data['Battery Prediction'])
+rmse = np.sqrt(mse)
+r2 = r2_score(data['Battery Drain (mAh/day)'], data['Battery Prediction'])
+
+print("Regression Evaluation Metrics:")
+print(f"Mean Absolute Error (MAE): {mae}")
+print(f"Mean Squared Error (MSE): {mse}")
+print(f"Root Mean Squared Error (RMSE): {rmse}")
+print(f"R-squared (R²): {r2}")
+
+# Plotting Actual vs Predicted Battery Drain
+plt.figure(figsize=(10,6), dpi=150)
+sns.scatterplot(x='Battery Drain (mAh/day)', y='Battery Prediction', data=data)
+plt.title("Actual vs Predicted Battery Drain")
+plt.show()
