@@ -2,7 +2,7 @@
 
 Created in Google Colab.
 
-Data Set: https://www.kaggle.com/datasets/camnugent/california-housing-prices
+**Data Source**: https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
 In this model, checkpoint "housing.csv" is evaluated and processed.
 The housing data evaluated is taken from the 1990 California census.
