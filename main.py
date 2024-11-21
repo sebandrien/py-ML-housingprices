@@ -60,24 +60,3 @@ plt.figure(figsize=(10, 6), dpi=150)
 sns.heatmap(corr_matrix, annot=True, cmap='YlGnBu', fmt='.2f', linewidths=0.5)
 plt.title("Correlation Heatmap (Including One-Hot Encoded Ocean Proximity)")
 plt.show()
-
-# Predicting User Behavior Class (Logistic Regression)
-X = data[['App Usage Time (min/day)', 'Battery Drain (mAh/day)', 'Screen On Time (hours/day)', 'Data Usage (MB/day)']]
-y = data['User Behavior Class']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
-
-# Scaling the data
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
-
-# Training logistic regression model
-model = LogisticRegression(max_iter=500)
-model.fit(X_train_scaled, y_train)
-y_pred = model.predict(X_test_scaled)
-
-print("\nClassification Report:")
-print(classification_report(y_test, y_pred))
-print("\nConfusion Matrix:")
-print(confusion_matrix(y_test, y_pred))
-print("\n")
