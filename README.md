@@ -4,7 +4,7 @@ Created in Google Colab.
 
 **Data Source**: https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
-In this model, checkpoint "housing.csv" is evaluated and processed.
+In this analysis, file "housing.csv" is evaluated and processed.
 The housing data evaluated is taken from the 1990 California census.
 First, a correlation between median_housing_price and other variables is established, allowing us to determine which variable correlates most with median_housing_price.
 
