@@ -1,4 +1,4 @@
-# PY California Housing Prices Data Analysis
+# Python California Housing Prices Data Analysis
 
 Created in Google Colab.
 
