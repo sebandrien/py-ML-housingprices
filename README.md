@@ -8,7 +8,7 @@ In this analysis, file "housing.csv" is evaluated and processed.
 The housing data evaluated is taken from the 1990 California census.
 First, a correlation between median_housing_price and other variables is established, allowing us to determine which variable correlates most with median_housing_price.
 
-General data analysis and validtaion is done:
+General data analysis and validtaion is done to visualize and clean the data.
 
 A histogram is done to visualize median house prices which can be visualzied at right-skewed.
 ![JupyterLab](images/graph_1.png)
