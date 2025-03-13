@@ -19,7 +19,7 @@ Median income is analyzed showing another right-skewed distribution.
 Ocean proximity of the data set is anaylzed showing a multimodal distribution.
 ![JupyterLab](images/graph_3.png)
 
-This aims to explore the relationship between median_income (on the x-axis) and median_house_value (on the y-axis), while differentiating points based on the ocean_proximity feature.
+This scatter plot aims to explore the relationship between median_income and median_house_value, while differentiating points based on the ocean_proximity feature.
 ![JupyterLab](images/graph_4.png)
 
 This scatter plot visualizes the relationship between population (on the x-axis) and median_house_value (on the y-axis), with each point again colored by ocean_proximity.
